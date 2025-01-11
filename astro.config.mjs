@@ -9,7 +9,5 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), svelte(), react()],
   output: "server",
-  adapter: cloudflare(),
-  site: "https://edlazdev.github.io",
-  base: "spotify-clone",
+  adapter: cloudflare()
 });
