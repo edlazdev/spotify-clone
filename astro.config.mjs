@@ -11,5 +11,5 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [tailwind(), svelte(), react()],
   output: 'server',
-  site: 'https://edlazdev.github.io',
+  site: 'https://edlazdev.github.io'
 });
