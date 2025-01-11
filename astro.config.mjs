@@ -1,15 +1,14 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-
-import tailwind from '@astrojs/tailwind';
-
-import svelte from '@astrojs/svelte';
-
-import react from '@astrojs/react';
+import { defineConfig } from "astro/config";
+import cloudflare from "@astrojs/cloudflare";
+import tailwind from "@astrojs/tailwind";
+import svelte from "@astrojs/svelte";
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), svelte(), react()],
-  output: 'server',
-  site: 'https://edlazdev.github.io'
+  output: "server",
+  adapter: cloudflare(),
+  site: "https://edlazdev.github.io",
 });
