@@ -11,4 +11,5 @@ export default defineConfig({
   output: "server",
   adapter: cloudflare(),
   site: "https://edlazdev.github.io",
+  base: "spotify-clone",
 });
